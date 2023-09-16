@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const userRoutes = require('./routes/userRoutes');
-const User = require('../models/User');
+const User = require('./models/User');
 const cron = require('node-cron');
 const { sendWeatherReport } = require('./services/emailService');
 

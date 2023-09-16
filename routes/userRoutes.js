@@ -30,7 +30,7 @@ router.put("/users/:id", async (req, res) => {
 // Get user weather data for a given location
 router.get("/users/:id", async (req, res) => {
   try {
-    const { id, email } = req.params;
+    const { id } = req.params;
     const user = await User.findById(id);
 
     if (!user) {
